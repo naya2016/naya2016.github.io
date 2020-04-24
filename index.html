@@ -24,17 +24,14 @@
 
 </head>
 <script src="https://api.ly522.com/js/yinghua.js"></script>
- <script>
-  var xhr = new XMLHttpRequest();
-  xhr.open('get', 'https://v1.hitokoto.cn');
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      var data = JSON.parse(xhr.responseText);
-      var hitokoto = document.getElementById('hitokoto');
-      hitokoto.innerText = data.hitokoto;
-    }
-  }
-  xhr.send();
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto')
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
 </script>
 <body>
     <div id="box">
