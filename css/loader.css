@@ -1,4 +1,8 @@
-.body{text-align:center}
+*{  
+           margin: 0px;  
+           padding: 0px;  
+       }  
+
 /* From uiverse.io by @AqFox */
 .spinner {
  width: 44px;
