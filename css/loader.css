@@ -1,7 +1,7 @@
 /* From uiverse.io by @AqFox */
 .spinner {
- width: 44px;
- height: 44px;
+ width: 300px;
+ height: 300px;
  animation: spinner-y0fdc1 2s infinite ease;
  transform-style: preserve-3d;
 }
