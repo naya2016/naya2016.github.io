@@ -14,7 +14,9 @@
      <!--居中预加载-->  
     <link rel="stylesheet" type="text/css" href="
     ../css/loader.css">
-     <!--居中预加载-->  
+     <!--居中预加载--> 
+    <link rel="stylesheet" type="text/css" href="
+    ../css/loader2.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 8192px)" href="
     ../css/nutssss.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1250px)" href="
@@ -57,6 +59,27 @@ body{background-image:url(https://s1.ax1x.com/2022/04/10/LkC8it.gif);background-
 
 
     <body>
+        
+       <div style="
+
+    width: 48px;
+
+    height: 48px;
+
+    position: absolute;
+z-index:100;
+    right: 0px;
+
+    top: 0px;"> 
+       <div class="loader"></div> 
+        
+        
+        
+         </div>    
+        
+        
+        
+        
       <!--居中预加载-->  
     <div style="text-align: center;
 
@@ -347,7 +370,7 @@ if (document.images) {
 
 <script>
     // 获取动画
-    let loader = document.querySelector(".spinner");
+    let loader = document.querySelector(".loader");
     // 加载完成事件
     window.onload = function () {
         // 加载完成，隐藏动画，显示内容
