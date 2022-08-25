@@ -1,4 +1,4 @@
-body{text-align:center}
+.body{text-align:center}
 /* From uiverse.io by @AqFox */
 .spinner {
  width: 44px;
@@ -10,7 +10,7 @@ body{text-align:center}
 .spinner > div {
  background-color: rgba(0,77,255,0.2);
  height: 100%;
- position: absolute;
+ position: fixed;
  width: 100%;
  border: 2px solid #004dff;
 }
