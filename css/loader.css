@@ -10,7 +10,7 @@
 .spinner > div {
  background-color: rgba(0,77,255,0.2);
  height: 100%;
- position: fixed;
+ position: absolute;
  width: 100%;
  border: 2px solid #004dff;
 }
