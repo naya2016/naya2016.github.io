@@ -40,16 +40,33 @@
     <link rel="stylesheet" href="../iconfont/iconfont.css">
   <script src="../iconfont/iconfont.js"></script>
     <link rel="stylesheet" href="../iconfont/style.css">
+    
 
+
+    <!--背景
     <style>
 body{background-image:url(https://s1.ax1x.com/2022/04/10/LkC8it.gif);background-repeat:no-repeat;background-position:center}
 
     </style>
+-->
     
-    
-
+    <!--随机背景-->
  
-  
+    <script type="text/javascript">
+        //<!CDATA[
+            var bodyBgs = [];
+            bodyBgs[0] = "";
+            bodyBgs[1] = "images/02.jpg";
+            bodyBgs[2] = "images/03.jpg";
+            bodyBgs[3] = "images/04.jpg";
+            bodyBgs[4] = "images/05.jpg";
+    
+            var randomBgIndex = Math.round( Math.random() * 4 );
+    
+        //输出随机的背景图
+            document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ');background-repeat:no-repeat;background-position:center}</style>');
+        //]]>
+        </script>
    
     
     
