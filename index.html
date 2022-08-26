@@ -94,22 +94,21 @@ body{background-image:url(https://s1.ax1x.com/2022/04/10/LkC8it.gif);background-
 
     <body>
         
-       <div style="
-
-    width: 48px;
-
-    height: 48px;
-
-    position: absolute;
-z-index:100;
-    right: 50%;
-
-    top: 0px;"> 
+       <div style="width: 48px;height: 48px;position: absolute;z-index: 100;right: 50%;left: 50%;top: 0px;"> 
        <div class="loader"></div> 
+       <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        </div>
+            </div>    
         
+             
         
-        
-         </div>    
+             
         
         
         
@@ -134,15 +133,7 @@ z-index:100;
     transform: translate(-50%,-50%);">
    -->
 
-<div class="spinner">
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-</div>
-    </div>    
+
 
  <!--居中预加载-->  
 
@@ -241,7 +232,7 @@ if (document.images) {
   document.addEventListener('visibilitychange', function () {
     if (document.hidden) {
       $('[rel="icon"]').attr('href', "/funny.ico");
-      document.title = 'hi~';
+      document.title = 'Hi~';
       clearTimeout(titleTime);
     } else {
       $('[rel="icon"]').attr('href', "/favicon.ico");
