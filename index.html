@@ -1,455 +1,1011 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>naya | 一个热爱音乐的boy</title>
+<!--Usefull Meta-->
+<meta name="description" content="A slick, customizable CV, Resume or Portfolio template, perfect for photographers, freelancers or designers.">
+<meta name="keywords" content="angus, resume, cv, vCard, portfolio, html template, template, responsive">
 
-    <title>naya | 一个热爱音乐的boy</title>
-    <meta name="description" content="主页">
-    <meta name="keywords" content="naya的小窝">
-    <link rel="stylesheet" type="text/css" href="
-    https://cdn.nutssss.cn/nutssss/css/stylesheet.css">
-     <!--居中预加载- 
-    <link rel="stylesheet" type="text/css" href="
-    ../css/loader.css">
-     --居中预加载--> 
-
-     <!--loader-->
-    <link rel="stylesheet" type="text/css" href="
-    ../css/loader2.css">
-    <!--page css-->
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 8192px)" href="
-    ../css/nutssss.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1250px)" href="
-    ../css/nutssss2.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1100px)" href="
-    ../css/nutssss3.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 770px)" href="
-    ../css/nutssss4.css" />
-    <link rel="ico" href="../favicon.ico">
-    <!--live2d-->
-    <link rel="stylesheet" type="text/css" href="./live/waifu.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css">
-    
-
-    <!--button as change wallpaper-->
-    <link rel="stylesheet" type="text/css" href="../css/button-as-change-wp.css">
+<!--Google Fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<!--AOS Animation Stylesheet-->
+<link rel="stylesheet" href="assets/css/aos.css">
+<!--Font Awesome-->
+<link rel="stylesheet" href="assets/css/all.min.css">
+<!--Magnific Popup-->
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<!--OWL Carousel-->
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<!--OWL Carousel Theme-->
+<link rel="stylesheet" href="assets/css/owl_theme.css">
+<!--Keyden Styelsheet with Bootstrap 5-->
+<link rel="stylesheet" href="assets/css/kayden_1.css">
 
 
-    <!--iconfont-->
-    <link rel="stylesheet" href="../iconfont/demo.css">
-    <link rel="stylesheet" href="../iconfont/iconfont.css">
-  <script src="../iconfont/iconfont.js"></script>
-    <link rel="stylesheet" href="../iconfont/style.css">
-    
 
-    <!--progress加载条
-    <link rel='stylesheet' href='../css/nprogress.css'/>
-    <script src='../js/nprogress.js'></script>
-    -->
 
-    <!--背景
-    <style>
+
+<link rel="stylesheet" type="text/css" href="
+https://cdn.nutssss.cn/nutssss/css/stylesheet.css">
+
+
+ <!--page css-->
+ <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 8192px)" href="
+ ../css/nutssss.css">
+ <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1250px)" href="
+ ../css/nutssss2.css" />
+ <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1100px)" href="
+ ../css/nutssss3.css" />
+ <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 770px)" href="
+ ../css/nutssss4.css" />
+ <link rel="ico" href="../favicon.ico">
+ <!--live2d-->
+ <link rel="stylesheet" type="text/css" href="./live/waifu.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css">
+ 
+
+ <!--button as change wallpaper-->
+ <link rel="stylesheet" type="text/css" href="../css/button-as-change-wp.css">
+
+
+ <!--iconfont-->
+ <link rel="stylesheet" href="../iconfont/demo.css">
+ <link rel="stylesheet" href="../iconfont/iconfont.css">
+<script src="../iconfont/iconfont.js"></script>
+ <link rel="stylesheet" href="../iconfont/style.css">
+ 
+
+ <!--progress加载条
+ <link rel='stylesheet' href='../css/nprogress.css'/>
+ <script src='../js/nprogress.js'></script>
+ -->
+
+ <!--背景
+ <style>
 body{background-image:url(https://s1.ax1x.com/2022/04/10/LkC8it.gif);background-repeat:no-repeat;background-position:center}
 
-    </style>
+ </style>
 -->
-    
-    <!--随机背景-->
  
-    <script type="text/javascript">
-        //<!CDATA[
-            var bodyBgs = [];
-            bodyBgs[0] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.1.jpeg";
-            bodyBgs[1] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.2.jpeg";
-            bodyBgs[2] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.3.jpeg";
-            bodyBgs[3] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.4.jpeg";
-            bodyBgs[4] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.5.jpeg";
-            bodyBgs[5] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.6.jpeg";
-            bodyBgs[6] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.7.jpeg";
-            bodyBgs[7] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.8.jpeg";
-            bodyBgs[8] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.9.jpeg";
-            bodyBgs[9] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.10.jpeg";
-            bodyBgs[10] = "https://s1.ax1x.com/2022/04/10/LkC8it.gif";
+ 
 
-            var randomBgIndex = Math.round( Math.random() * 10 );
-    
-        //输出随机的背景图
-            document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ');background-repeat: no-repeat;background-position: center;background-size: cover;background-attachment: fixed;}</style>');
-        //]]>
-        </script>
-   
-    
-    
-    
-    
- 
-    
-    
-    
-    
+
+
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+ var jsonModel = [
+//  "https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json",// 初音
+// "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",// 萌娘
+"https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",// 小可爱（女）
+// "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",// 小可爱（男）
+// "https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json",// 小帅哥
+ ];
+ L2Dwidget.init({ 
+     "model": { 
+         "jsonPath": jsonModel[Math.floor(Math.random()*(jsonModel.length-1))],
+         "scale": 1 
+     }, 
+     "display": { 
+         "position": "left", // 位置left、right
+         "width": 115, // 宽度
+         "height": 115, // 高度
+         "hOffset": 10, // 横向边距
+         "vOffset": 0 // 众向边距
+     }, 
+     "mobile": { 
+         "show": true // 手机是否显示
+     },
+ });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
-
-
-
-
-
-    <body>
-        
-       <div style="width: 48px;height: 48px;position: absolute;z-index: 100;right: 44%;top: 0px;"> 
-       <div class="loader"></div> 
-       <div class="spinner">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        </div>
-            </div>    
-        
-             
-        
-             
-        
-        
-        
-        
-      <!--水平垂直居中预加载--
-    <div style="text-align: center;
-
-
-
-    border-radius: 20px;
-
-    width: 88px;
-
-    height: 88px;
-
-    position: absolute;
-z-index:100;
-    left: 50%;
-
-    top: 50%;
-
-    transform: translate(-50%,-50%);">
-   -->
-
-
-
- <!--居中预加载-->  
-
-     <script type="text/javascript">
-if (document.images) {
-    imgPreload = new Image();
-    imgPreload.src = "naya2016.jpg";
-}
-</script>
-        
-        
-        <script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://widget.daovoice.io/widget/493043ef.js","daovoice");</script>
-<script>
-    daovoice('init', {
-      app_id: "493043ef",
-    });
-    daovoice('update');
-  </script>
-        
-        
-        
-      
-        
- <!-- live2d
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> 
-<div class="waifu" id="waifu"> <div class="waifu-tips" style="opacity: 1;"></div>
-    <canvas id="live2d" width="280" height="250" class="live2d"></canvas> </div> <script src="./live/live2d.js"></script> <script src="./live/waifu-tips.js"></script> <script type="text/javascript">initModel()</script>
-
-    备用-->
-  <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
-<script>
-    var jsonModel = [
-  //  "https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json",// 初音
-   // "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",// 萌娘
-   "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",// 小可爱（女）
-   // "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",// 小可爱（男）
-   // "https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json",// 小帅哥
-    ];
-    L2Dwidget.init({ 
-        "model": { 
-            "jsonPath": jsonModel[Math.floor(Math.random()*(jsonModel.length-1))],
-            "scale": 1 
-        }, 
-        "display": { 
-            "position": "left", // 位置left、right
-            "width": 115, // 宽度
-            "height": 115, // 高度
-            "hOffset": 10, // 横向边距
-            "vOffset": 0 // 众向边距
-        }, 
-        "mobile": { 
-            "show": true // 手机是否显示
-        },
-    });
-</script>
-
-    <script src="https://myhkw.cn/player/js/jquery.min.js" type="text/javascript"></script>
-    
-    
-    
-    
- <!--视频背景
-    <video id="v1" autoplay loop muted>
-          <source src="://124.222.119.138/wp-content/uploads/2022/03/najas.mp4" type="video/mp4"  />
-    </video>
-    
-    -->
-
-<!-- 天气挂件 -->
-<div id="tp-weather-widget"></div>
-  <script>
-    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
-    window.SeniverseWeatherWidget('show', {
-      flavor: "bubble",
-      location: "WS0E9D8WN298",
-      geolocation: true,
-      language: "zh-Hans",
-      unit: "c",
-      theme: "auto",
-      token: "5fd5b254-57fe-4f8a-8a13-f92485efeb0b",
-      hover: "enabled",
-      container: "tp-weather-widget"
-    })
-  </script>
-    
-    
-    
- <!--浏览器搞笑标题备用
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.6/js/FunnyTitle.js"></script>
--->
-    <!--浏览器搞笑标题-->
-<script>
-  // 浏览器搞笑标题
-  var OriginTitle = document.title;
-  var titleTime;
-  document.addEventListener('visibilitychange', function () {
-    if (document.hidden) {
-      $('[rel="icon"]').attr('href', "/funny.ico");
-      document.title = 'Hi~';
-      clearTimeout(titleTime);
-    } else {
-      $('[rel="icon"]').attr('href', "/favicon.ico");
-      document.title = '┬─┬ ノ( \' - \'ノ)' + OriginTitle;
-      titleTime = setTimeout(function () {
-        document.title = OriginTitle;
-      }, 2000);
-    }
-  });
-</script>
-
-    
-   <!--备用弹幕
-<div>
-    <marquee behavior="scroll" direction="left" scrollamount="16"><font color="red" size="5px" >失恋了💔</font> </marquee>
-    <marquee behavior="scroll" direction="right" scrollamount="12"><font color="pink" size="10px" >恨透你了，lmy！！！</font> </marquee>
-</div>     
-    弹窗
-   -->        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-        
-        
-
-                                                                                                                                                                                                                                                                                                                                     
- 
-
-    
-    <div id="box">
-        <!-- 个人资料卡片 -->
-        <div class="meBox">
-            <!-- 头像 -->
-            <div class="headPhoto"></div>
-            <!-- 介绍 -->
-            <div class="meBox-title">
-                <p>纳雅(lizonglin)</p>
-                <div class="fg"></div>
-            </div>
-            <div class="meBox-text">
-            <p>爱好音乐，计算机</p>
-            <p>瞎折腾浪费时间最在行</p>
-            <p>欢迎造次：</p>
-            <div class="nexmoe-widget nexmoe-social">
-                <a class="mdui-ripple" href="http://wpa.qq.com/msgrd?v=3&uin=247015815&site=qq&menu=yes" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
-                    <i class="nexmoefont icon-QQ"></i>
-                </a><a class="mdui-ripple" href="https://space.bilibili.com/384651816" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-                    <i class="nexmoefont icon-bilibili"></i>
-                </a><a class="mdui-ripple" href="https://github.com/naya2016/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-                    <i class="nexmoefont icon-github"></i>
-                </a>
-            </div>
-            <!--
-            <p>一言：<p/>
-<script type="text/javascript" src="https://api.uixsj.cn/hitokoto/get?type=hitokoto&code=js"></script><div id="hitokoto"><script>hitokoto()</script></div>
-            -->
-
-
-            
-            <button type="button"  onclick="javascript:location.reload()">换张壁纸</button>
-
-          
+<body data-offset="102">
+<!--PRELOADER START-->
+<div id="preloader">
+  <div class="text-center w-100">
+    <div class="loader"></div>
+  </div>
 </div>
+<!--PRELOADER END--> 
+<!--Header START-->
+<header class="kayden-header sticky-top">
+  <div class="header-inside transparent_header">
+    <div class="d-flex flex-row justify-content-between align-items-center"> 
+      <!--Header Toggler START-->
+      <div class="kayden-menu-toggler"><a class="kayden-toggler text-reset" data-bs-toggle="offcanvas" href="#kaydenOffCanvas" role="button" aria-controls="kaydenOffCanvas">
+        <div class="kt-r"><span></span><span></span><span></span></div>
+        <div class="kt-t">MENU </div>
+        </a></div>
+      <!--Header Toggler END--><!--Header Logo START-->
+      <div class="kayden-logo"><a href="#"><img src="../naya2016.png" height="30" alt="logo"></a></div>
+      <!--Header Logo END--><!--Header Info START-->
+      <div class="kayden-nav-meta fs-5 fw-bold d-none d-sm-block text-end"><a href="#" class="text-reset">247015815@qq.com</a></div>
+      <!--Header Info END--></div>
+  </div>
+</header>
+<!--Header END--><!--Off Canvas START-->
+<div class="offcanvas offcanvas-start" id="kaydenOffCanvas"> 
+  <!--Off Canvas Header START-->
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
+  </div>
+  <!--Off Canvas Header END--><!--Off Canvas Body START-->
+  <div class="offcanvas-body">
+    <div class="kayden-offcanvas-nav-container d-flex flex-column justify-content-center align-items-center"><!--Off Canvas Navigation START-->
+      <ul class="kayden-offcanvas-nav list-inline">
+        <li class="py-3"><a href="#home" class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold" data-bs-dismiss="offcanvas">Home</a></li>
+        <li class="py-3"><a href="#about" class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold" data-bs-dismiss="offcanvas">About</a></li>
+        <li class="py-3"><a href="#portfolio" class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold" data-bs-dismiss="offcanvas">Portfolio</a></li>
+        <li class="py-3"><a href="#faq" class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold" data-bs-dismiss="offcanvas">FAQ</a></li>
+        <li class="py-3"><a href="#contact" class="kayden_scrollspy underline_animation underline_text text-reset fs-4 fw-bold" data-bs-dismiss="offcanvas">Contact</a></li>
+      </ul>
+      <!--Off Canvas Navigation END--> 
+    </div>
+  </div>
+  <!--Off Canvas Body END--> 
+</div>
+<!--Off Canvas END--><!--Home Section START-->
+<section id="home" class="home vh-100"><!--Home Background START-->
+  <div class="home-background position-absolute top-0 start-0 w-100 h-100"><img src="https://s1.ax1x.com/2022/04/10/LkC8it.gif" data-aos="fade-up" data-aos-duration="1000" alt="home" class="w-100 h-100 fit-cover fit-left-top"></div>
+  <!--Home Background END--><!--Home Container START-->
+  <div class="container h-100 position-relative">
+    <div class="home-details text-center text-sm-end w-100 h-100 d-flex align-items-center">
+      <div class="home-details-inner w-100">
+        <p class="welcome_text fs-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"><span class="typed_text" data-options="Web Developer, Graphic Designer"></span></p>
+        <h1 class="fs-1 fw-bold  kayden-underline-center kayden-underline-sm-right kayden-underline-big d-inline-block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">I'm naya</h1>
+      </div>
+    </div>
+  </div>
+  <!--Home Container END--> 
+  <!--Scroll Down START-->
+  <div class="scroll-down"> <a href="#about" class="kayden_scrollspy scroll-down-link text-center">
+    <div class="scroll-title">向下滑～</div>
+    <div class="scroll-mouse">
+      <div class="whell"></div>
+    </div>
+    </a> </div>
+  <!--Scroll Down END--> 
+</section>
+<!--Home Section END--> 
+<!--About Section START-->
+<section id="about" class="min-vh-100">
+
+
+ 
+<!--随机背景-->
+
+<script type="text/javascript">
+    //<!CDATA[
+        var bodyBgs = [];
+        bodyBgs[0] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.1.jpeg";
+        bodyBgs[1] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.2.jpeg";
+        bodyBgs[2] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.3.jpeg";
+        bodyBgs[3] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.4.jpeg";
+        bodyBgs[4] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.5.jpeg";
+        bodyBgs[5] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.6.jpeg";
+        bodyBgs[6] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.7.jpeg";
+        bodyBgs[7] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.8.jpeg";
+        bodyBgs[8] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.9.jpeg";
+        bodyBgs[9] = "https://download.fastgit.org/naya-cdn/cdn/releases/download/cdn-pictures/1.10.jpeg";
+       
+
+        var randomBgIndex = Math.round( Math.random() * 9 );
+
+    //输出随机的背景图
+        document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ');background-repeat: no-repeat;background-position: center;background-size: cover;background-attachment: fixed;}</style>');
+    //]]>
+    </script>
+
   
 
 
+          
+     
+     
+
+
+  <script type="text/javascript">
+if (document.images) {
+ imgPreload = new Image();
+ imgPreload.src = "naya2016.jpg";
+}
+</script>
+     
+     
+     <script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://widget.daovoice.io/widget/493043ef.js","daovoice");</script>
+<script>
+ daovoice('init', {
+   app_id: "493043ef",
+ });
+ daovoice('update');
+</script>
+     
+     
+     
+   
+     
+<!-- live2d
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> 
+<div class="waifu" id="waifu"> <div class="waifu-tips" style="opacity: 1;"></div>
+ <canvas id="live2d" width="280" height="250" class="live2d"></canvas> </div> <script src="./live/live2d.js"></script> <script src="./live/waifu-tips.js"></script> <script type="text/javascript">initModel()</script>
+
+ 备用-->
+
+
+ <script src="https://myhkw.cn/player/js/jquery.min.js" type="text/javascript"></script>
+ 
+ 
+ 
+ 
+<!--视频背景
+ <video id="v1" autoplay loop muted>
+       <source src="://124.222.119.138/wp-content/uploads/2022/03/najas.mp4" type="video/mp4"  />
+ </video>
+ 
+ -->
+
+
+ 
+ 
+<!--浏览器搞笑标题备用
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.6/js/FunnyTitle.js"></script>
+-->
+ <!--浏览器搞笑标题-->
+<script>
+// 浏览器搞笑标题
+var OriginTitle = document.title;
+var titleTime;
+document.addEventListener('visibilitychange', function () {
+ if (document.hidden) {
+   $('[rel="icon"]').attr('href', "/funny.ico");
+   document.title = 'Hi~';
+   clearTimeout(titleTime);
+ } else {
+   $('[rel="icon"]').attr('href', "/favicon.ico");
+   document.title = '┬─┬ ノ( \' - \'ノ)' + OriginTitle;
+   titleTime = setTimeout(function () {
+     document.title = OriginTitle;
+   }, 2000);
+ }
+});
+</script>
+
+ 
+<!--备用弹幕
+<div>
+ <marquee behavior="scroll" direction="left" scrollamount="16"><font color="red" size="5px" >失恋了💔</font> </marquee>
+ <marquee behavior="scroll" direction="right" scrollamount="12"><font color="pink" size="10px" >恨透你了，lmy！！！</font> </marquee>
+</div>     
+ 弹窗
+-->        
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+ 
+     
+     
+
+                                                                                                                                                                                                                                                                                                                                  
+
+
+ 
+ <div id="box">
+     <!-- 个人资料卡片 -->
+     <div class="meBox">
+         <!-- 头像 -->
+         <div class="headPhoto"></div>
+         <!-- 介绍 -->
+         <div class="meBox-title">
+             <p>纳雅</p>
+             <div class="fg"></div>
+         </div>
+         <div class="meBox-text">
+         <p>爱好音乐，计算机</p>
+         <p>瞎折腾浪费时间最在行</p>
+         <p>欢迎造次：</p>
+         <div class="nexmoe-widget nexmoe-social">
+             <a class="mdui-ripple" href="http://wpa.qq.com/msgrd?v=3&uin=247015815&site=qq&menu=yes" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+                 <i class="nexmoefont icon-QQ"></i>
+             </a><a class="mdui-ripple" href="https://space.bilibili.com/384651816" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+                 <i class="nexmoefont icon-bilibili"></i>
+             </a><a class="mdui-ripple" href="https://github.com/naya2016/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+                 <i class="nexmoefont icon-github"></i>
+             </a>
+         </div>
+         <!--
+         <p>一言：<p/>
+<script type="text/javascript" src="https://api.uixsj.cn/hitokoto/get?type=hitokoto&code=js"></script><div id="hitokoto"><script>hitokoto()</script></div>
+         -->
+
+
+         
+         <button type="button"  onclick="javascript:location.reload()">换张壁纸</button>
+
+       
+</div>
 
 
 
-            <!-- 两个按钮 -->
-            <div class="meBox-Button">
-                <a href="https://official-website-amber.vercel.app/">工作室</a>
-                <a href="https://edge-eight.vercel.app/">搜索（好康的）</a>
-            </div>
-        </div>
 
-        <!-- 伪终端介绍 -->
-        <div id="cmdBox">
-            <!-- 第一个终端 -->
-            <div class="cmd">
-                <!-- 三个按钮 -->
-                <div class="click">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
+
+
+         <!-- 两个按钮 -->
+         <div class="meBox-Button">
+             <a href="https://official-website-amber.vercel.app/">工作室</a>
+             <a href="https://edge-eight.vercel.app/">搜索（好康的）</a>
+         </div>
+     </div>
+
+     <!-- 伪终端介绍 -->
+     <div id="cmdBox">
+         <!-- 第一个终端 -->
+         <div class="cmd">
+             <!-- 三个按钮 -->
+             <div class="click">
+                 <div class="red"></div>
+                 <div class="yellow"></div>
+                 <div class="green"></div>
+             </div>
+             
+             <!-- 顶部标题 -->
+             <div class="title">
+                 <span>love naya</span>
+             </div>
+             <!-- 终端内文字 -->
+             <div class="cmdText">
+                 <span style="color: rgb(0, 190, 0);">root@naya</span>
+                 <span style="color: blue;"> </span>
+
+                 <!--
+                 <span style="color: rgb(39, 39, 39);">天气：</span>
+                 <br />
+                 <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tc&skin=pitaya" frameborder="0"
+                     width="350" height="24" allowtransparency="true"></iframe>
+                 <br />
+                 -->
                 
-                <!-- 顶部标题 -->
-                <div class="title">
-                    <span>love naya</span>
-                </div>
-                <!-- 终端内文字 -->
-                <div class="cmdText">
-                    <span style="color: rgb(0, 190, 0);">root@naya</span>
-                    <span style="color: blue;"> </span>
 
-                    <!--
-                    <span style="color: rgb(39, 39, 39);">天气：</span>
-                    <br />
-                    <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tc&skin=pitaya" frameborder="0"
-                        width="350" height="24" allowtransparency="true"></iframe>
-                    <br />
-                    -->
-                   
-
-                    <span style="color: rgb(0, 190, 0);">root@naya</span>
-                    <span style="color: rgb(0, 183, 255);">about me：</span>
-                    <p>喜欢计算机的咸鱼一条，虽然懂得不多，但是这是我最喜欢的爱好吧。</p>
-                    <span style="color: rgb(0, 190, 0);">root@naya</span>                     
-                    <span style="color: rgb(0, 183, 255);">鸡汤来喽：
-                    </span>
-                    <p>心灵鸡汤：（刷新网页再来一碗~）</p>
-                        <script type="text/javascript" src="https://api.uixsj.cn/hitokoto/get?type=hitokoto&code=js"></script><div id="hitokoto"><script>hitokoto()</script></div>
-                                   
-                <h3>纳雅这个昵称出自于童年和最好的朋友看过的动画片里的人物：
+                 <span style="color: rgb(0, 190, 0);">root@naya</span>
+                 <span style="color: rgb(0, 183, 255);">about me：</span>
+                 <p>喜欢计算机的咸鱼一条，虽然懂得不多，但是这是我最喜欢的爱好吧。</p>
+                 <span style="color: rgb(0, 190, 0);">root@naya</span>                     
+                 <span style="color: rgb(0, 183, 255);">鸡汤来喽：
+                 </span>
+                 <p>心灵鸡汤：（刷新网页再来一碗~）</p>
+                     <script type="text/javascript" src="https://api.uixsj.cn/hitokoto/get?type=hitokoto&code=js"></script><div id="hitokoto"><script>hitokoto()</script></div>
+                                
+             <h3>纳雅这个昵称出自于童年和最好的朋友看过的动画片里的人物：
 
 
-                </h3>
-                <iframe src="//player.bilibili.com/player.html?aid=383722245&bvid=BV1YZ4y1y7vE&cid=589244217&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-            
-                    
-                
-                  
+             </h3>
+             <iframe src="//player.bilibili.com/player.html?aid=383722245&bvid=BV1YZ4y1y7vE&cid=589244217&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+         
+                 
+             
+               
 
-                </div>
-                <!--网易云音乐播放器
-                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=38018486&auto=0&height=66"></iframe>
-                  -->
-            </div>
-            <!-- 第二个终端 -->
-            <div class="cmd cmd2">
-                <!-- 三个按钮 -->
-                <div class="click">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <!-- 顶部标题 -->
-                <div class="title">
-                    <span>love naya</span>
-                </div>
-                <!-- 终端内文字 -->
-                <div class="cmdText">
-                    <span style="color: rgb(0, 190, 0);">root@naya</span>
-                    <span style="color: blue;"> </span>
-                    <span style="color: rgb(39, 39, 39);"></span>
-                    <!--
-                    <p>网易云热评<p>
-                    <script type="text/javascript" src="https://api.4gml.com/NeteaseMusic?type=bq" async defer></script><p id='wycontent'></p><p id='wyname' style="float:right"></p><p id='wyusername' style="float:right"></p>
-                    -->
-                    
-                     <p>我的其他站点：</p>
-                    <ul class="ul">
-                        <li><a href="https://www.cnblogs.com/naya2016/#/c/subject/category/default.html">技术杂文</a></li>
-                        <li><a href="https://ithink-eight.vercel.app/">一些杂文杂事，日记</a></li>
-                        <li><a href="https://official-website-amber.vercel.app/">工作室</a></li>
-                        <li><a href="https://music-omega-teal.vercel.app/">音乐</a></li>
-                        <li><a href="https://tools-naya2016.vercel.app/">工具</a></li>
-                        <p>废弃的站点：</p>
-                        <li><a href="https://naya2016.gitee.io/blog">日记•生活（此项目已放弃）</a></li>
-                        <li><a href="http://naya2016.gitee.io/blog2/">杂文杂事（此项目不断更新中）</a></li>
-                        <li><a href="http://124.222.119.138/"></a></li>
-                        
-                    </ul>
-                    <span style="color: rgb(0, 190, 0);">root@naya</span>
-                    <span style="color: blue;"> </span>
-                </div>
-            </div>
-        </div>
-    </div>
+             </div>
+             <!--网易云音乐播放器
+             <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=38018486&auto=0&height=66"></iframe>
+               -->
+         </div>
+         <!-- 第二个终端 -->
+         <div class="cmd cmd2">
+             <!-- 三个按钮 -->
+             <div class="click">
+                 <div class="red"></div>
+                 <div class="yellow"></div>
+                 <div class="green"></div>
+             </div>
+             <!-- 顶部标题 -->
+             <div class="title">
+                 <span>love naya</span>
+             </div>
+             <!-- 终端内文字 -->
+             <div class="cmdText">
+                 <span style="color: rgb(0, 190, 0);">root@naya</span>
+                 <span style="color: blue;"> </span>
+                 <span style="color: rgb(39, 39, 39);"></span>
+                 <!--
+                 <p>网易云热评<p>
+                 <script type="text/javascript" src="https://api.4gml.com/NeteaseMusic?type=bq" async defer></script><p id='wycontent'></p><p id='wyname' style="float:right"></p><p id='wyusername' style="float:right"></p>
+                 -->
+                 
+                  <p>我的其他站点：</p>
+                 <ul class="ul">
+                     <li><a href="https://www.cnblogs.com/naya2016/#/c/subject/category/default.html">技术杂文</a></li>
+                     <li><a href="https://ithink-eight.vercel.app/">一些杂文杂事，日记</a></li>
+                     <li><a href="https://official-website-amber.vercel.app/">工作室</a></li>
+                     <li><a href="https://music-omega-teal.vercel.app/">音乐</a></li>
+                     <li><a href="https://tools-naya2016.vercel.app/">工具</a></li>
+                     <p>废弃的站点：</p>
+                     <li><a href="https://naya2016.gitee.io/blog">日记•生活（此项目已放弃）</a></li>
+                     <li><a href="http://naya2016.gitee.io/blog2/">杂文杂事（此项目不断更新中）</a></li>
+                     <li><a href="http://124.222.119.138/"></a></li>
+                     
+                 </ul>
+                 <span style="color: rgb(0, 190, 0);">root@naya</span>
+                 <span style="color: blue;"> </span>
+             </div>
+         </div>
+     </div>
+ </div>
 
-    <!-- 页脚 -->
-    <div id="footer">
-        <center>
+ <!-- 页脚 -->
+ <div id="footer">
+     <center>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> 
 
 
 
 <div style="text-align: center;font-weight: bold;color: #1BC3FB;">
-      <span id="subtitle1">没有伞的孩子必须努力奔跑！</span><span class="typed-cursor typed-cursor--blink">|</span>
-      <span id="typed-cursor"></span>
+   <span id="subtitle1">没有伞的孩子必须努力奔跑！</span><span class="typed-cursor typed-cursor--blink">|</span>
+   <span id="typed-cursor"></span>
 </div>
 <!-- 打字特效（蓝色字体） -->  
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> 
 <script>var typed = new Typed("#subtitle1", { strings: ["Live a good life, write some good code !!!", "愿自己的努力终将获得回报。", "花开不是为了花落，而是为了开的更加灿烂。", "没有伞的孩子必须努力奔跑！", "欲望以提升热忱，毅力以磨平高山。", "如果放弃太早，你永远都不知道自己会错过什么。", "没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。"], startDelay: 1000, typeSpeed: 100, loop: !0, backSpeed: 60, backDelay: 2000, showCursor: !0 })</script>
-        <p>© 2020-现在 naya | 忙着学习。。。。</p>
-        <p>love  <a href="https://naya.vercel.app/%E5%90%9B%E3%81%AE%E5%90%8D%E3%81%AF.html">君の名は</a></p>
-    </div>
-        <script src="https://myhkw.cn/api/player/159739753291" id="myhk" key="159739753291" m="1"></script>
+     <p>© 2020-现在 naya | 忙着学习。。。。</p>
+     <p>love  <a href="https://naya.vercel.app/%E5%90%9B%E3%81%AE%E5%90%8D%E3%81%AF.html">君の名は</a></p>
+ </div>
+     <script src="https://myhkw.cn/api/player/159739753291" id="myhk" key="159739753291" m="1"></script>
 
 <script>
-    // 获取动画
-    let loader = document.querySelector(".loader");
-    // 加载完成事件
-    window.onload = function () {
-        // 加载完成，隐藏动画，显示内容
-        loader.style.display = "none";
-    }
+ // 获取动画
+ let loader = document.querySelector(".loader");
+ // 加载完成事件
+ window.onload = function () {
+     // 加载完成，隐藏动画，显示内容
+     loader.style.display = "none";
+ }
 </script>
 
-
+</section>
+<!--About Section END--> 
+<!--Services Section START-->
+<section id="services">
+  <div class="container"> 
+    <!--Section Heading START-->
+    <div class="heading text-center mb-5">
+      <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">Services</h2>
+    </div>
+    <!--Section Heading END--> 
+    <!--Section Body START-->
+    <div class="section-body"> 
+      <!--Gradient Grid START-->
+      <div class="kayden-gradient-grid"> 
+        <!--Gradient Grid ROW START-->
+        <div class="row g-0"> 
+          <!--Gradient Grid Item START-->
+          <div class="col-lg-4 text-center">
+            <div class="p-5">
+              <div class="fs-2 mb-3"> <i class="fas fa-server"></i> </div>
+              <h4 class="mb-3">Development</h4>
+              <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <!--Gradient Grid Item END--> 
+          <!--Gradient Grid Item START-->
+          <div class="col-lg-4 text-center">
+            <div class="p-5">
+              <div class="fs-2 mb-3"> <i class="fas fa-mobile-alt"></i> </div>
+              <h4 class="mb-3">Responsive</h4>
+              <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <!--Gradient Grid Item END--> 
+          <!--Gradient Grid Item START-->
+          <div class="col-lg-4 text-center">
+            <div class="p-5">
+              <div class="fs-2 mb-3"> <i class="fas fa-mug-hot"></i> </div>
+              <h4 class="mb-3">UX / UI Design</h4>
+              <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <!--Gradient Grid Item END--> 
+        </div>
+        <!--Gradient Grid ROW END--> 
+        <!--Gradient Grid ROW START-->
+        <div class="row g-0"> 
+          <!--Gradient Grid Item START-->
+          <div class="col-lg-4 text-center">
+            <div class="p-5">
+              <div class="fs-2 mb-3"> <i class="far fa-clone"></i> </div>
+              <h4 class="mb-3">User Friendly</h4>
+              <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <!--Gradient Grid Item END--> 
+          <!--Gradient Grid Item START-->
+          <div class="col-lg-4 text-center">
+            <div class="p-5">
+              <div class="fs-2 mb-3"> <i class="far fa-heart"></i> </div>
+              <h4 class="mb-3">Lovely</h4>
+              <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <!--Gradient Grid Item END--> 
+          <!--Gradient Grid Item START-->
+          <div class="col-lg-4 text-center">
+            <div class="p-5">
+              <div class="fs-2 mb-3"> <i class="fas fa-rocket"></i> </div>
+              <h4 class="mb-3">Bootstrap 5</h4>
+              <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <!--Gradient Grid Item END--> 
+        </div>
+        <!--Gradient Grid ROW END--> 
+      </div>
+      <!--Gradient Grid END--> 
+    </div>
+    <!--Section Body END--> 
+  </div>
+</section>
+<!--Services Section END--> 
+<!--Facts Section START-->
+<section id="facts"> 
+  <!--Section Body START-->
+  <div class="section-body">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-md-6">
+          <div class="row gx-3 gy-5">
+            <div class="col-6"> 
+              <!--Facts Item START-->
+              <div class="fact d-flex flex-column align-items-center align-items-md-start">
+                <h3 class="fs-2 d-inline-block"><span class="tmcounter" data-from="0" data-to="9" data-speed="1500">0</span><sup>+</sup></h3>
+                <p class="fs-4 d-inline-block text-center text-md-left">Years Experience</p>
+              </div>
+              <!--Facts Item END--> 
+            </div>
+            <div class="col-6"> 
+              <!--Facts Item START-->
+              <div class="fact d-flex flex-column align-items-center align-items-md-start">
+                <h3 class="fs-2 d-inline-block" ><span class="tmcounter" data-from="0" data-to="100" data-speed="1500">0</span><sup>+</sup></h3>
+                <p class="fs-4 d-inline-block text-center text-md-left">Happy Clients</p>
+              </div>
+              <!--Facts Item END--> 
+            </div>
+            <div class="col-6"> 
+              <!--Facts Item START-->
+              <div class="fact d-flex flex-column align-items-center align-items-md-start">
+                <h3 class="fs-2 d-inline-block" ><span class="tmcounter" data-from="0" data-to="8963" data-speed="1500">0</span></h3>
+                <p class="fs-4 d-inline-block text-center text-md-left">Downloads</p>
+              </div>
+              <!--Facts Item END--> 
+            </div>
+            <div class="col-6"> 
+              <!--Facts Item START-->
+              <div class="fact d-flex flex-column align-items-center align-items-md-start">
+                <h3 class="fs-2 d-inline-block"><span class="tmcounter" data-from="0" data-to="2569" data-speed="1500">0</span></h3>
+                <p class="fs-4 d-inline-block text-center text-md-left">Projects done</p>
+              </div>
+              <!--Facts Item END--> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="fs-3 mb-5 fw-bold">My Skills</h2>
+          <div class="skills_container"> 
+            <!--Progress Bar START-->
+            <div class="mb-4">
+              <label class="mb-3 fs-6">Web Design 75%</label>
+              <div class="progress">
+                <div class="progress-bar progress-bar-loadAnimation" data-percent="75" style="width: 0%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!--Progress Bar END--> 
+            <!--Progress Bar START-->
+            <div class="mb-4">
+              <label class="mb-3 fs-6">Web Development 90%</label>
+              <div class="progress">
+                <div class="progress-bar progress-bar-loadAnimation" data-percent="90" style="width: 0%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!--Progress Bar END--> 
+            <!--Progress Bar START-->
+            <div class="mb-4">
+              <label class="mb-3 fs-6">Wordpress development 70%</label>
+              <div class="progress">
+                <div class="progress-bar progress-bar-loadAnimation" data-percent="70" style="width: 0%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!--Progress Bar END--> 
+            <!--Progress Bar START-->
+            <div class="mb-4">
+              <label class="mb-3 fs-6">Front end development 95%</label>
+              <div class="progress">
+                <div class="progress-bar progress-bar-loadAnimation" data-percent="95" style="width: 0%;" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!--Progress Bar END--> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section Body END--> 
+</section>
+<!--Facts Sectrion END--> 
+<!--Portfolio Section START-->
+<section id="portfolio">
+  <div class="container"> 
+    <!--Section Heading START-->
+    <div class="heading text-center mb-5">
+      <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">Portfolio</h2>
+    </div>
+    <!--Section Heading END--> 
+    <!--Section Body START-->
+    <div class="section-body"> 
+      <!--Masonry Grid Container START-->
+      <div class="row gy-5 grid"> 
+        <!--Masonry Grid Item START-->
+        <div class="col-md-6 col-lg-4 grid-item"> <a href="assets/images/portfolio1.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+          <div class="portfolio-thumbnail"> <img src="assets/images/portfolio1.jpg" class="img-fluid img-grayTransition" alt=""> </div>
+          <div class="portfolio-description my-3">
+            <h3 class="fs-5 underline_text fw-bold d-inline-block">Man in Neon</h3>
+            <span class="d-block fw-light small-font-size">Street</span> </div>
+          </a> </div>
+        <!--Masonry Grid Item END--> 
+        <!--Masonry Grid Item START-->
+        <div class="col-md-6 col-lg-4 grid-item"> <a href="assets/images/portfolio2.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+          <div class="portfolio-thumbnail"> <img src="assets/images/portfolio2.jpg" class="img-fluid img-grayTransition" alt=""> </div>
+          <div class="portfolio-description my-3">
+            <h3 class="fs-5 underline_text fw-bold d-inline-block">Girl in Yellow</h3>
+            <span class="d-block fw-light small-font-size">Neon</span> </div>
+          </a> </div>
+        <!--Masonry Grid Item END--> 
+        <!--Masonry Grid Item START-->
+        <div class="col-md-6 col-lg-4 grid-item"> <a href="assets/images/portfolio3.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+          <div class="portfolio-thumbnail"> <img src="assets/images/portfolio3.jpg" class="img-fluid img-grayTransition" alt=""> </div>
+          <div class="portfolio-description my-3">
+            <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+            <span class="d-block fw-light small-font-size">Neon</span> </div>
+          </a> </div>
+        <!--Masonry Grid Item END--> 
+        <!--Masonry Grid Item START-->
+        <div class="col-md-6 col-lg-4 grid-item"> <a href="assets/images/portfolio4.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+          <div class="portfolio-thumbnail"> <img src="assets/images/portfolio4.jpg" class="img-fluid img-grayTransition" alt=""> </div>
+          <div class="portfolio-description my-3">
+            <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+            <span class="d-block fw-light small-font-size">Neon</span> </div>
+          </a> </div>
+        <!--Masonry Grid Item END--> 
+        <!--Masonry Grid Item START-->
+        <div class="col-md-6 col-lg-4 grid-item"> <a href="assets/images/portfolio5.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+          <div class="portfolio-thumbnail"> <img src="assets/images/portfolio5.jpg" class="img-fluid img-grayTransition" alt=""> </div>
+          <div class="portfolio-description my-3">
+            <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+            <span class="d-block fw-light small-font-size">Neon</span> </div>
+          </a> </div>
+        <!--Masonry Grid Item END--> 
+        <!--Masonry Grid Item START-->
+        <div class="col-md-6 col-lg-4 grid-item"> <a href="assets/images/portfolio6.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+          <div class="portfolio-thumbnail"> <img src="assets/images/portfolio6.jpg" class="img-fluid img-grayTransition" alt=""> </div>
+          <div class="portfolio-description my-3">
+            <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+            <span class="d-block fw-light small-font-size">Neon</span> </div>
+          </a> </div>
+        <!--Masonry Grid Item END--> 
+        <!--Masonry Grid Item START-->
+        <div class="col-md-6 col-lg-4 grid-item"> <a href="assets/images/portfolio7.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+          <div class="portfolio-thumbnail"> <img src="assets/images/portfolio7.jpg" class="img-fluid img-grayTransition" alt=""> </div>
+          <div class="portfolio-description my-3">
+            <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+            <span class="d-block fw-light small-font-size">Neon</span> </div>
+          </a> </div>
+        <!--Masonry Grid Item END--> 
+        <!--Masonry Grid Item START-->
+        <div class="col-md-6 col-lg-4 grid-item"> <a href="assets/images/portfolio8.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+          <div class="portfolio-thumbnail"> <img src="assets/images/portfolio8.jpg" class="img-fluid img-grayTransition" alt=""> </div>
+          <div class="portfolio-description my-3">
+            <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+            <span class="d-block fw-light small-font-size">Neon</span> </div>
+          </a> </div>
+        <!--Masonry Grid Item END--> 
+      </div>
+      <!--Masonry Grid Container END--> 
+    </div>
+    <!--Section Body START--> 
+  </div>
+</section>
+<!--Portfolio Section END--> 
+<!--Education Section START-->
+<section id="education">
+  <div class="container"> 
+    <!--Section Heading START-->
+    <div class="heading text-center mb-5">
+      <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">Education</h2>
+    </div>
+    <!--Section Heading END--> 
+    <!--Section Body START-->
+    <div class="section-body">
+      <div class="table-responsive"> 
+        <!--Educational Table START-->
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="d-table-cell d-sm-none"><div class="mb-3 fw-light">2010-2016</div>
+                <div class="mb-3 fw-bold">Univercity of Boston, Computer Science</div>
+                <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</div></td>
+              <td class="w-25 d-none d-sm-table-cell"><span class="fw-light fs-5">2010-2016</span></td>
+              <td class="w-50 d-none d-sm-table-cell"><span class="fw-bold fs-5">Univercity of Boston, Computer Science</span></td>
+              <td class="w-25 d-none d-sm-table-cell"><span class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </span></td>
+            </tr>
+            <tr>
+              <td class="d-table-cell d-sm-none border-0"><div class="mb-3 fw-light">2010-2016</div>
+                <div class="mb-3 fw-bold">Univercity of Boston, Computer Science</div>
+                <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</div></td>
+              <td class="w-25 d-none d-sm-table-cell border-0"><span class="fw-light fs-5">2010-2016</span></td>
+              <td class="w-50 d-none d-sm-table-cell border-0"><span class="fw-bold fs-5">Univercity of Boston, Computer Science</span></td>
+              <td class="w-25 d-none d-sm-table-cell border-0"><span class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </span></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--Educational Table END--> 
+      </div>
+    </div>
+    <!--Section Body END--> 
+  </div>
+</section>
+<!--Education Section END--> 
+<!--Testimonials START-->
+<section id="testimonials">
+  <div class="container"> 
+    <!--Section Heading START-->
+    <div class="heading text-center mb-5">
+      <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">Testimonials</h2>
+    </div>
+    <!--Section Heading END--> 
+    <!--Section Body START-->
+    <div class="section-body">
+      <div class="testimonials-header mb-5">
+        <div class="row">
+          <div class="col-10 offset-1">
+            <div class="text-primary fs-1"> <i class="fas fa-quote-right"></i> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row"> 
+        <!--OWL Slider START-->
+        <div id="client_slider" class="owl-carousel owl-theme"> 
+          <!--OWL Slider Item START-->
+          <div class="offset-1 col-10">
+            <div class="row">
+              <div class="col-md-6 order-2 order-md-1">
+                <div class="testimonial_details">
+                  <p class="text-secondary mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <span class="font-family-secondary fs-5 fw-light fst-italic">--Emma Watson</span></div>
+              </div>
+              <div class="col-md-6 order-1 order-md-2">
+                <div class="testimonial_thumbnail d-flex justify-content-start justify-content-md-end"><img src="assets/images/testimonial1.jpg" class="kayden-shadow rounded-3 w-auto" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <!--OWL Slider Item END--><!--OWL Slider Item START-->
+          <div class="offset-1 col-10">
+            <div class="row">
+              <div class="col-md-6 order-2 order-md-1">
+                <div class="testimonial_details">
+                  <p class="text-secondary mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <span class="font-family-secondary fs-5 fw-light fst-italic">--Linzi Landry</span> </div>
+              </div>
+              <div class="col-md-6 order-1 order-md-2">
+                <div class="testimonial_thumbnail d-flex justify-content-start justify-content-md-end"> <img src="assets/images/testimonial2.jpg" class="kayden-shadow rounded-3 w-auto" alt=""> </div>
+              </div>
+            </div>
+          </div>
+          <!--OWL Slider Item END--> 
+          <!--OWL Slider Item START-->
+          <div class="offset-1 col-10">
+            <div class="row">
+              <div class="col-md-6 order-2 order-md-1">
+                <div class="testimonial_details">
+                  <p class="text-secondary mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <span class="font-family-secondary fs-5 fw-light fst-italic">--Maksim Mckenna</span></div>
+              </div>
+              <div class="col-md-6 order-1 order-md-2">
+                <div class="testimonial_thumbnail d-flex justify-content-start justify-content-md-end"><img src="assets/images/testimonial3.jpg" class="kayden-shadow rounded-3 w-auto" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <!--OWL Slider Item END--></div>
+        <!--OWL Slider END--></div>
+    </div>
+    <!--Section Body END--></div>
+</section>
+<!--Testimonials END--><!--FAQ START-->
+<section id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-3 col-md-6"><!--Section Heading START-->
+        <div class="heading text-center mb-5">
+          <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">FAQ</h2>
+        </div>
+        <!--Section Heading END--><!--Accordion START-->
+        <div class="accordion" id="faq_accordion"><!--Accordion ITEM START-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true" aria-controls="accordion1">What is Bootstrap 5 </button>
+            </h2>
+            <div id="accordion1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faq_accordion">
+              <div class="accordion-body text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+            </div>
+          </div>
+          <!--Accordion ITEM END--> 
+          <!--Accordion ITEM START-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="true" aria-controls="accordion2"> How working kayden Template? </button>
+            </h2>
+            <div id="accordion2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq_accordion">
+              <div class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+            </div>
+          </div>
+          <!--Accordion ITEM END--><!--Accordion ITEM START-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="true" aria-controls="accordion3">Why using Bootstrap 5? </button>
+            </h2>
+            <div id="accordion3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faq_accordion">
+              <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+            </div>
+          </div>
+          <!--Accordion ITEM END--> 
+          <!--Accordion ITEM START-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="true" aria-controls="accordion4"> How to control grids in this template? </button>
+            </h2>
+            <div id="accordion4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faq_accordion">
+              <div class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+            </div>
+          </div>
+          <!--Accordion ITEM END--></div>
+        <!--Accordion END--></div>
+    </div>
+  </div>
+</section>
+<!--FAQ END--><!--Contact Us START-->
+<section id="contact">
+  <div class="container"><!--Section Heading START-->
+    <div class="heading text-center mb-5">
+      <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">Contact Us</h2>
+    </div>
+    <!--Section Heading END--><!--Section Body START-->
+    <div class="section-body">
+      <div class="row gy-5">
+        <div class="col-md-6">
+          <div class="d-flex flex-column justify-content-center h-100"><!--Contact Details START-->
+            <div class="contact-details d-flex flex-row align-items-center mb-3">
+              <div class="cd-icon fs-2 me-4"><i class="fas fa-envelope"></i></div>
+              <div class="cd-info fs-5 font-family-secondary"><a href="#" class="text-white"><span class="__cf_email__" data-cfemail="d5beb4acb1b0bb95b0adb4b8a5b9b0fbb6bab8">[email&#160;protected]</span></a></div>
+            </div>
+            <!--Contact Details END--><!--Contact Details START-->
+            <div class="contact-details d-flex flex-row align-items-center mb-3">
+              <div class="cd-icon fs-2 me-4"><i class="fas fa-map-marked-alt"></i></div>
+              <div class="cd-info fs-5 font-family-secondary">New York,USA </div>
+            </div>
+            <!--Contact Details END--><!--Contact Details START-->
+            <div class="contact-details d-flex flex-row align-items-center">
+              <div class="cd-icon fs-2 me-4"><i class="fas fa-phone"></i></div>
+              <div class="cd-info fs-5 font-family-secondary"><a href="#" class="text-white">247015815@qq.com</a></div>
+            </div>
+            <!--Contact Details END--></div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-5 fs-4 text-center text-sm-left">Or Let's start to conversation</h3>
+          <form action="php/form.php" method="post" id="contact-form">
+            <div class="mb-4">
+              <input type="text" name="name" id="name" placeholder="Full name" class="form-control">
+            </div>
+            <div class="mb-4">
+              <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+            </div>
+            <div class="mb-4">
+              <input type="text" name="subject" id="subject" placeholder="Subject" class="form-control">
+            </div>
+            <div class="mb-4">
+              <textarea placeholder="Message" name="text" id="text" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <div class="mb-4">
+              <button type="submit" id="contact-btn" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Section Body END--></div>
+</section>
+<!--Contact Us END--> 
+<!--Footer START-->
+<footer class="kayden-footer py-4">
+  <div class="container">
+    <div class="d-flex flex-column align-items-center justify-content-center py-3"><!--Social Links START-->
+      <ul class="social-links list-inline mb-4">
+        <li class="list-inline-item"><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="list-inline-item"><a href="#" title="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+        <li class="list-inline-item"><a href="#" title="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+        <li class="list-inline-item"><a href="#" title="git"><i class="fab fa-git"></i></a></li>
+      </ul>
+      <!--Social Links END--> 
+      <!--Copyright START-->
+      <p class="text-center m-0">2021 ©. kayden Template. Developed and Designed By <a href="http://www.jq22.com/">jq22</a></p>
+      <!--Copyright END--></div>
+  </div>
+</footer>
+<!--Footer END--><!--To TOP START--> 
+<a href="#" class="toTop d-inline" id="return-to-top"><i class="fas fa-chevron-up"></i></a> 
+<!--To TOP END--><!--JavaScript START--> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<!--JQuery--> 
+<script src="assets/js/jquery.min.js"></script> 
+<!--AOS Animations--> 
+<script src="assets/js/aos.js"></script> 
+<!--Jquery Easing --> 
+<script src="assets/js/jquery.easing.min.js"></script> 
+<!--Jquery Appear --> 
+<script src="assets/js/jquery.appear.min.js"></script> 
+<!--Kayden preloader --> 
+<script src="assets/js/preloader.js"></script> 
+<!--Jquery Count To --> 
+<script src="assets/js/jquery.countTo.js"></script> 
+<!--Masonry --> 
+<script src="assets/js/masonry.pkgd.min.js"></script> 
+<!--Jquery Magnific Popup --> 
+<script src="assets/js/jquery.magnific-popup.min.js"></script> 
+<!--OWL Carousel --> 
+<script src="assets/js/owl.carousel.min.js"></script> 
+<!--Typed JS --> 
+<script src="assets/js/typed.min.js"></script> 
+<!--Kayden Alert --> 
+<script src="assets/js/alert.js"></script> 
+<!--Kayden Contact US --> 
+<script src="assets/js/contact.js"></script> 
+<!--Kayden Custom Script --> 
+<script src="assets/js/kayden.js"></script> 
+<!--JavaScript END-->
 </body>
 </html>
